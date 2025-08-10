@@ -1,0 +1,51 @@
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  .visual-box {
+    width: 100%;
+    .visual-title {
+      font-weight: $bold;
+      font-size: ppr(80);
+      .name {
+        width: 100%;
+        position: relative;
+        > li {
+          width: 100%;
+          text-align: center;
+          &.nick {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+          }
+        }
+      }
+      .type {
+        display: block;
+        text-align: center;
+        opacity: 0;
+      }
+    }
+    .visual-desc {
+      display: block;
+      padding-top: ppr(20);
+      text-align: center;
+      font-size: 12px;
+      opacity: 0;
+    }
+  }
+}
+@media (max-width: 350px) {
+  .visual {
+    .visual-box {
+      .visual-title {
+        font-size: 24px;
+      }
+    }
+  }
+}

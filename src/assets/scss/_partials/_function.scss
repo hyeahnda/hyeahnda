@@ -1,0 +1,22 @@
+@charset 'utf-8';
+@use 'sass:math';
+
+//단위변환 기본값
+$device-width: 1920;
+$body-font-size: 16;
+
+// 단위변환
+@function ppr($px) {
+  $convert: math.div($px, $body-font-size);
+  @return $convert + rem;
+}
+
+@function vw($px) {
+  $convert: math.div($px, ($device-width * 100));
+  @return $convert + vw;
+}
+
+@function vh($px) {
+  $convert: math.div($px, ($device-width * 100));
+  @return $convert + vh;
+}

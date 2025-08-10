@@ -1,0 +1,43 @@
+.archive-wrap {
+  background-color: #000;
+  min-height: 100vh;
+}
+.archive {
+  width: 100%;
+  padding: ppr(80) 0;
+  max-width: ppr(1000);
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  .title {
+    font-size: ppr(48);
+    font-weight: $bold;
+    color: #fff;
+  }
+  .project-list {
+    padding-top: ppr(40);
+    > li {
+      border: ppr(1) solid #888;
+      border-radius: ppr(5);
+      padding: ppr(40);
+    }
+    .project-tit {
+      display: flex;
+      gap: ppr(12);
+      align-items: end;
+      .project-name {
+        font-size: ppr(24);
+        font-weight: $bold;
+      }
+      .project-date {
+        font-weight: $light;
+      }
+      .project-skill {
+        display: flex;
+        gap: ppr(8);
+        font-weight: $light;
+      }
+    }
+  }
+}

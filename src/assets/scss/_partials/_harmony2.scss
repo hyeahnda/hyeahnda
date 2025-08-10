@@ -1,0 +1,60 @@
+.harmony-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #fff;
+  .harmony {
+    width: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 900px) {
+  .harmony-wrap {
+    .harmony {
+      .content {
+        .title-box {
+          .title {
+            font-size: ppr(36);
+          }
+        }
+        .desc-box {
+          display: block;
+        }
+
+        &.profile {
+          .desc-box {
+            text-align: center;
+          }
+          .profile-img {
+            width: ppr(200);
+            margin: 0 auto;
+          }
+          .profile-box {
+            padding: ppr(20) 0 0;
+            .profile-info {
+              > li {
+                &.strong {
+                  .tit {
+                    font-size: ppr(18);
+                  }
+                  .desc {
+                    font-size: ppr(16);
+                  }
+                }
+                .info {
+                  margin-top: ppr(32);
+                  > li {
+                    justify-content: center;
+                    font-size: ppr(16);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
