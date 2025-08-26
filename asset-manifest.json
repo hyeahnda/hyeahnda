@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hyeahnda/static/css/main.01d8e27c.css",
-    "main.js": "/hyeahnda/static/js/main.c97d21fa.js",
+    "main.css": "/hyeahnda/static/css/main.7ad8fd91.css",
+    "main.js": "/hyeahnda/static/js/main.f1fdc557.js",
     "static/js/453.1407b060.chunk.js": "/hyeahnda/static/js/453.1407b060.chunk.js",
     "static/media/Pretendard-Black.woff": "/hyeahnda/static/media/Pretendard-Black.fe80bd8c7ce9b3af972f.woff",
     "static/media/Pretendard-Bold.woff": "/hyeahnda/static/media/Pretendard-Bold.f6866c5eb21ccb9a8749.woff",
@@ -21,12 +21,12 @@
     "static/media/Pretendard-Thin.woff2": "/hyeahnda/static/media/Pretendard-Thin.41861ab4e67767c4c6ed.woff2",
     "static/media/profile-on.jpg": "/hyeahnda/static/media/profile-on.cbb0c8c00b25be26a836.jpg",
     "index.html": "/hyeahnda/index.html",
-    "main.01d8e27c.css.map": "/hyeahnda/static/css/main.01d8e27c.css.map",
-    "main.c97d21fa.js.map": "/hyeahnda/static/js/main.c97d21fa.js.map",
+    "main.7ad8fd91.css.map": "/hyeahnda/static/css/main.7ad8fd91.css.map",
+    "main.f1fdc557.js.map": "/hyeahnda/static/js/main.f1fdc557.js.map",
     "453.1407b060.chunk.js.map": "/hyeahnda/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01d8e27c.css",
-    "static/js/main.c97d21fa.js"
+    "static/css/main.7ad8fd91.css",
+    "static/js/main.f1fdc557.js"
   ]
 }
