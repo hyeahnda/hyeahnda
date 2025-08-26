@@ -5,20 +5,3 @@ html {
 .wrap {
   overflow: hidden;
 }
-
-.footer {
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  gap: ppr(8);
-  align-items: end;
-  padding-bottom: ppr(40);
-  .title {
-    font-size: 20px;
-  }
-  > ul {
-    display: flex;
-    gap: ppr(8);
-  }
-}

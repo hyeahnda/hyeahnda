@@ -2,7 +2,6 @@ import './assets/css/styles.css';
 import { useState, useEffect, useRef } from 'react';
 import Visual from './component/visual';
 import Harmony from './component/harmony';
-import Archive from './component/archive';
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -16,9 +15,7 @@ function App() {
       <main className="container">
         <Visual />
         <Harmony />
-        {/* <Archive /> */}
       </main>
-      <footer className="footer"></footer>
     </div>
   );
 }

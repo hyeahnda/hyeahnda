@@ -207,23 +207,6 @@ html {
   overflow: hidden;
 }
 
-.footer {
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  align-items: end;
-  padding-bottom: 2.5rem;
-}
-.footer .title {
-  font-size: 20px;
-}
-.footer > ul {
-  display: flex;
-  gap: 0.5rem;
-}
-
 .visual {
   display: flex;
   align-items: center;
@@ -267,7 +250,7 @@ html {
   opacity: 0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .visual .visual-box .visual-title {
     font-size: 24px;
   }
@@ -316,6 +299,8 @@ html {
   display: flex;
   justify-content: center;
   gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .harmony .cont-box.core .core-list > li {
   width: calc((100% - 2.5rem) / 3);
@@ -333,6 +318,61 @@ html {
   line-height: 1.2;
   color: #555;
   font-size: 14px;
+}
+.harmony .cont-box.tech .tech-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.harmony .cont-box.tech .tech-list > li {
+  width: calc((100% - 30px) / 4);
+}
+.harmony .cont-box.tech .tech-list > li .icon svg {
+  max-height: 100%;
+}
+.harmony .cont-box.project .project-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.harmony .cont-box.project .project-list > li {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 10px 24px;
+  border-radius: 5px;
+}
+.harmony .cont-box.project .project-list > li:nth-child(even) {
+  background-color: #eee;
+}
+.harmony .cont-box.project .project-list > li .date {
+  width: 130px;
+  text-align: left;
+  font-size: 12px;
+}
+.harmony .cont-box.project .project-list > li .info {
+  width: calc(100% - 150px);
+  text-align: left;
+}
+.harmony .cont-box.project .project-list > li .info .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+.harmony .cont-box.project .project-list > li .info .desc {
+  line-height: 1.5;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.harmony .cont-box.project .project-list > li .info .pj-skill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+.harmony .cont-box.project .project-list > li .info .pj-link {
+  font-size: 12px;
+  color: #3a4db9;
+  font-weight: 600;
 }
 
 .archive-wrap {
