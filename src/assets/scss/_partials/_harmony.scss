@@ -1,7 +1,5 @@
-.harmony-wrap {
-}
 .harmony {
-  padding: ppr(100) ppr(40);
+  padding: 100px ppr(40);
   .profile {
     text-align: center;
     margin-bottom: ppr(100);
@@ -16,7 +14,7 @@
       }
     }
     .profile-desc {
-      margin: ppr(30) 0;
+      margin: 30px 0;
       line-height: 1.25;
       font-size: 16px;
     }
@@ -34,9 +32,10 @@
     .tit-box {
       .cate {
         font-weight: $semibold;
+        font-size: 14px;
       }
       .tit {
-        font-size: ppr(36);
+        font-size: 36px;
         padding: ppr(16) 0 ppr(30);
       }
     }
@@ -125,6 +124,79 @@
               font-size: 12px;
               color: #3a4db9;
               font-weight: $semibold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .harmony {
+    .profile {
+      margin-bottom: 50px;
+      .profile-img {
+        width: 200px;
+        height: 200px;
+      }
+      .profile-desc {
+        font-size: 14px;
+      }
+
+      .btn-gray {
+        font-size: 12px;
+      }
+    }
+    .cont-box {
+      margin-top: 50px;
+      .tit-box {
+        .tit {
+          font-size: 18px;
+        }
+      }
+
+      &.core {
+        .core-list {
+          display: block;
+          > li {
+            width: 100%;
+            + li {
+              margin-top: 20px;
+            }
+            .core-name {
+              font-size: 14px;
+            }
+            .core-desc {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      &.project {
+        .project-list {
+          > li {
+            display: block;
+            .date {
+              width: 100%;
+              display: block;
+              margin-bottom: 10px;
+            }
+            .info {
+              width: 100%;
+              text-align: left;
+              .name {
+                font-size: 14px;
+              }
+              .desc {
+                margin-top: 8px;
+                font-size: 14px;
+              }
+              .pj-link {
+                display: block;
+                margin-top: 10px;
+              }
             }
           }
         }

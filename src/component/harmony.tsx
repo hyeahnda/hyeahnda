@@ -1,6 +1,3 @@
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import ScrollTrigger from 'gsap/ScrollTrigger';
 import { ReactElement, useEffect, useRef } from 'react';
 import profileImg from '../assets/image/profile-on.jpg';
 import {
@@ -19,7 +16,6 @@ import {
   IconPhotoShop,
   IconGit,
 } from './icon';
-gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 interface pjType {
   id: string;
@@ -106,34 +102,18 @@ const pjList: pjType[] = [
 ];
 
 function Harmony() {
-  const harmonyWrapRef = useRef<HTMLDivElement>(null);
-  const harmonyRef = useRef<HTMLDivElement>(null);
-  useGSAP(
-    () => {
-      const harmonyWrap = harmonyWrapRef.current;
-      const harmony = harmonyRef.current;
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/resume_ahndahye.pdf';
+    link.download = '안다혜_이력서.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
-      let mm = gsap.matchMedia();
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: harmonyWrap,
-          // pin: harmony,
-          start: '-50% 0%',
-          end: '0% 0%',
-          scrub: 1,
-          // markers: true,
-        },
-      });
-      mm.add('all', () => {
-        // tl.to(harmonyWrap, { backgroundColor: '#fff', duration: 1 }, 1);
-        // tl.to(harmony, { opacity: 1, duration: 1 }, 1);
-      });
-    },
-    { scope: harmonyRef },
-  );
   return (
-    <div className="harmony-wrap" ref={harmonyWrapRef}>
-      <div className="harmony" ref={harmonyRef}>
+    <div className="harmony-wrap">
+      <div className="harmony">
         <div className="profile">
           <div className="profile-img">
             <img src={profileImg} alt="" />
@@ -146,7 +126,9 @@ function Harmony() {
             <br />
             함께 좋은 제품을 만들고 성장할 수 있는 곳을 찾고 있습니다.
           </p>
-          <button className="btn-gray">이력서 다운로드</button>
+          <button className="btn-gray" onClick={handleDownload}>
+            이력서 다운로드
+          </button>
         </div>
         <div className="cont-box core">
           <div className="tit-box">

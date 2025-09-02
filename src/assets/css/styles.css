@@ -256,7 +256,7 @@ html {
   }
 }
 .harmony {
-  padding: 6.25rem 2.5rem;
+  padding: 100px 2.5rem;
 }
 .harmony .profile {
   text-align: center;
@@ -273,7 +273,7 @@ html {
   max-width: 100%;
 }
 .harmony .profile .profile-desc {
-  margin: 1.875rem 0;
+  margin: 30px 0;
   line-height: 1.25;
   font-size: 16px;
 }
@@ -290,9 +290,10 @@ html {
 }
 .harmony .cont-box .tit-box .cate {
   font-weight: 600;
+  font-size: 14px;
 }
 .harmony .cont-box .tit-box .tit {
-  font-size: 2.25rem;
+  font-size: 36px;
   padding: 1rem 0 1.875rem;
 }
 .harmony .cont-box.core .core-list {
@@ -375,6 +376,65 @@ html {
   font-weight: 600;
 }
 
+@media (max-width: 850px) {
+  .harmony .profile {
+    margin-bottom: 50px;
+  }
+  .harmony .profile .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+  .harmony .profile .profile-desc {
+    font-size: 14px;
+  }
+  .harmony .profile .btn-gray {
+    font-size: 12px;
+  }
+  .harmony .cont-box {
+    margin-top: 50px;
+  }
+  .harmony .cont-box .tit-box .tit {
+    font-size: 18px;
+  }
+  .harmony .cont-box.core .core-list {
+    display: block;
+  }
+  .harmony .cont-box.core .core-list > li {
+    width: 100%;
+  }
+  .harmony .cont-box.core .core-list > li + li {
+    margin-top: 20px;
+  }
+  .harmony .cont-box.core .core-list > li .core-name {
+    font-size: 14px;
+  }
+  .harmony .cont-box.core .core-list > li .core-desc {
+    font-size: 14px;
+  }
+  .harmony .cont-box.project .project-list > li {
+    display: block;
+  }
+  .harmony .cont-box.project .project-list > li .date {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .harmony .cont-box.project .project-list > li .info {
+    width: 100%;
+    text-align: left;
+  }
+  .harmony .cont-box.project .project-list > li .info .name {
+    font-size: 14px;
+  }
+  .harmony .cont-box.project .project-list > li .info .desc {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  .harmony .cont-box.project .project-list > li .info .pj-link {
+    display: block;
+    margin-top: 10px;
+  }
+}
 .archive-wrap {
   background-color: #000;
   min-height: 100vh;
